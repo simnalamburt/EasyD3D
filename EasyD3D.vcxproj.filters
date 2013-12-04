@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Src\pch.cpp">
+      <Filter>[pch]</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ErrorReporter.cpp">
+      <Filter>Utility\ErrorReporter</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\LoadString.cpp">
+      <Filter>Utility\LoadString</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\PerformanceCounter.cpp">
+      <Filter>Utility\PerformanceCounter</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Stopwatch.cpp">
+      <Filter>Utility\Stopwatch</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Direct3dWindow.cpp">
+      <Filter>Window\Direct3dWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\GdiWindow.cpp">
+      <Filter>Window\GdiWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\WindowDesc.cpp">
+      <Filter>Window\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Window.cpp">
+      <Filter>Window\Window</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Inc\EasyD3D\EasyD3D.h" />
+    <ClInclude Include="Inc\EasyD3D\RAII.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\EasyD3D\Type.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\EasyD3D\Uncopyable.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\pch.h">
+      <Filter>[pch]</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\EasyD3D\ErrorReporter.h">
+      <Filter>Utility\ErrorReporter</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\EasyD3D\LoadString.h">
+      <Filter>Utility\LoadString</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\EasyD3D\PerformanceCounter.h">
+      <Filter>Utility\PerformanceCounter</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\EasyD3D\Stopwatch.h">
+      <Filter>Utility\Stopwatch</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\EasyD3D\Direct3dWindowDesc.h">
+      <Filter>Window\Direct3dWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\EasyD3D\Direct3dWindow.h">
+      <Filter>Window\Direct3dWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\EasyD3D\GdiWindow.h">
+      <Filter>Window\GdiWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\EasyD3D\WindowDesc.h">
+      <Filter>Window\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\EasyD3D\Window.h">
+      <Filter>Window\Window</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Window">
+      <UniqueIdentifier>{bb9a8599-a2c3-486a-8178-881d96ddf7d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{32cda751-5a3a-4aef-8b60-97cf3777a87a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[pch]">
+      <UniqueIdentifier>{79c8d4a1-545b-42c4-b90a-26661687a885}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\ErrorReporter">
+      <UniqueIdentifier>{70c35af0-2470-47c6-b936-64ad203b6887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\LoadString">
+      <UniqueIdentifier>{4c647392-dd4f-4c04-8e19-b1af244b58c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\PerformanceCounter">
+      <UniqueIdentifier>{2ef8b55b-3130-4e83-892d-2f4c764f4794}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Stopwatch">
+      <UniqueIdentifier>{3eb6310a-f5d2-42c9-b2a7-bf74b09aa338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Window\Direct3dWindow">
+      <UniqueIdentifier>{7cda4384-ab45-401d-a0e6-15704681b30e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Window\GdiWindow">
+      <UniqueIdentifier>{6c1965d5-dc38-4f2c-bf68-c110974e4c41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Window\Window">
+      <UniqueIdentifier>{84ac4700-c144-41bf-92e8-e7cc0b592290}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
