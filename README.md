@@ -3,6 +3,12 @@ EasyD3D
 
 Make Direct3D11 application fast and easily with **EasyD3D**!
 
+You can easily include EasyD3D project into your solution by a single git command.
+
+    git submodule add git://github.com/simnalamburt/EasyD3D.git EasyD3D
+
+See how easily EasyD3D let you make a new window!
+
     #include <Windows.h>
     #include <EasyD3D/EasyD3D.h>
     
