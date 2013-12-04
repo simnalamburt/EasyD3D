@@ -3,15 +3,18 @@
 
 
 
-size_t WindowDesc::Counter = 0;
-
-WindowDesc::WindowDesc()
+namespace EasyD3D
 {
-    instanceHandle = GetModuleHandle(nullptr);
-    width = height = CW_USEDEFAULT;
-    fullscreen = false;
+    size_t WindowDesc::Counter = 0;
 
-    std::wostringstream stream;
-    stream << L"EasyD3DWindow%u" << Counter++;
-    className = stream.str();
+    WindowDesc::WindowDesc()
+    {
+        instanceHandle = GetModuleHandle(nullptr);
+        width = height = CW_USEDEFAULT;
+        fullscreen = false;
+
+        std::wostringstream stream;
+        stream << L"EasyD3DWindow%u" << Counter++;
+        className = stream.str();
+    }
 }

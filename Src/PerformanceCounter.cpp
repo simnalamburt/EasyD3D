@@ -4,16 +4,19 @@
 
 
 
-LONGLONG QueryPerformanceFrequency()
+namespace EasyD3D
 {
-    LARGE_INTEGER freq;
-    FALSE_ERROR(QueryPerformanceFrequency(&freq));
-    return freq.QuadPart;
-}
+    LONGLONG QueryPerformanceFrequency()
+    {
+        LARGE_INTEGER freq;
+        FALSE_ERROR(QueryPerformanceFrequency(&freq));
+        return freq.QuadPart;
+    }
 
-LONGLONG QueryPerformanceCounter()
-{
-    LARGE_INTEGER count;
-    FALSE_ERROR(QueryPerformanceCounter(&count));
-    return count.QuadPart;
+    LONGLONG QueryPerformanceCounter()
+    {
+        LARGE_INTEGER count;
+        FALSE_ERROR(QueryPerformanceCounter(&count));
+        return count.QuadPart;
+    }
 }
