@@ -3,13 +3,16 @@
 
 
 
-void GdiWindow::onDraw()
+namespace EasyD3D
 {
-    if (draw)
+    void GdiWindow::onDraw()
     {
-        PAINTSTRUCT ps;
-        HDC hdc = BeginPaint(getWindowHandle(), &ps);
-        draw(hdc);
-        EndPaint(getWindowHandle(), &ps);
+        if (draw)
+        {
+            PAINTSTRUCT ps;
+            HDC hdc = BeginPaint(getWindowHandle(), &ps);
+            draw(hdc);
+            EndPaint(getWindowHandle(), &ps);
+        }
     }
 }

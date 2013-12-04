@@ -21,6 +21,3 @@
 #include <sstream>
 #include <memory>
 #include <functional>
-
-namespace EasyD3D {}
-using namespace EasyD3D;
