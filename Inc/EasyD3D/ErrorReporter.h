@@ -47,26 +47,20 @@ while (false)
 
 
 // Interface Macros
-#define HR_ERROR_MSG(x, msg) _HR(x, ErrorReportType::Error, msg)
-#define NONZERO_ERROR_MSG(x, msg) _NONZERO(x, ErrorReportType::Error, msg)
-#define FALSE_ERROR_MSG(x, msg) _FALSE(x, ErrorReportType::Error, msg)
-#define ERROR_MSG(msg) _CUSTOM(0, ErrorReportType::Error, msg)
-
-#ifdef _DEBUG
-#define HR_WARNING_MSG(x, msg) _HR(x, ErrorReportType::Warning, msg)
-#define NONZERO_WARNING_MSG(x, msg) _NONZERO(x, ErrorReportType::Warning, msg)
-#define FALSE_WARNING_MSG(x, msg) _FALSE(x, ErrorReportType::Warning, msg)
-#define WARNING_MSG(msg) _CUSTOM(0, ErrorReportType::Warning, msg)
-#else
-#define HR_WARNING_MSG(x, msg) (x)
-#define NONZERO_WARNING_MSG(x, msg) (x)
-#define FALSE_WARNING_MSG(x, msg) (x)
-#define WARNING_MSG(msg)
-#endif
-
+#define HR_ERROR_MSG(x, msg) _HR(x, ::EasyD3D::ErrorReportType::Error, msg)
 #define HR_ERROR(x) HR_ERROR_MSG(x, nullptr)
+#define HR_WARNING_MSG(x, msg) _HR(x, ::EasyD3D::ErrorReportType::Warning, msg)
 #define HR_WARNING(x) HR_WARNING_MSG(x, nullptr)
+
+#define NONZERO_ERROR_MSG(x, msg) _NONZERO(x, ::EasyD3D::ErrorReportType::Error, msg)
 #define NONZERO_ERROR(x) NONZERO_ERROR_MSG(x, nullptr)
+#define NONZERO_WARNING_MSG(x, msg) _NONZERO(x, ::EasyD3D::ErrorReportType::Warning, msg)
 #define NONZERO_WARNING(x) NONZERO_WARNING_MSG(x, nullptr)
+
+#define FALSE_ERROR_MSG(x, msg) _FALSE(x, ::EasyD3D::ErrorReportType::Error, msg)
 #define FALSE_ERROR(x) FALSE_ERROR_MSG(x, nullptr)
+#define FALSE_WARNING_MSG(x, msg) _FALSE(x, ::EasyD3D::ErrorReportType::Warning, msg)
 #define FALSE_WARNING(x) FALSE_WARNING_MSG(x, nullptr)
+
+#define ERROR_MSG(msg) _CUSTOM(0, ::EasyD3D::ErrorReportType::Error, msg)
+#define WARNING_MSG(msg) _CUSTOM(0, ::EasyD3D::ErrorReportType::Warning, msg)
