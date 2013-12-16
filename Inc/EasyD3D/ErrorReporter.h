@@ -20,7 +20,7 @@ do \
 { \
     int __code = (int)(x); \
 if (FAILED(__code)) \
-    ::EasyD3D::Report(report_type, __code, ErrorCodeType::HR, __FILEW__, __LINE__, __FUNCTIONW__, L#x, msg); \
+    ::EasyD3D::Report(report_type, __code, ::EasyD3D::ErrorCodeType::HR, __FILEW__, __LINE__, __FUNCTIONW__, L#x, msg); \
 } \
 while (false)
 
@@ -29,7 +29,7 @@ do \
 { \
     int __code = (int)(x); \
 if (__code) \
-    ::EasyD3D::Report(report_type, __code, ErrorCodeType::Nonzero, __FILEW__, __LINE__, __FUNCTIONW__, L#x, msg); \
+    ::EasyD3D::Report(report_type, __code, ::EasyD3D::ErrorCodeType::Nonzero, __FILEW__, __LINE__, __FUNCTIONW__, L#x, msg); \
 } \
 while (false)
 
@@ -38,12 +38,12 @@ do \
 { \
     int __code = (int)(x); \
 if (!(__code)) \
-    ::EasyD3D::Report(report_type, __code, ErrorCodeType::False, __FILEW__, __LINE__, __FUNCTIONW__, L#x, msg); \
+    ::EasyD3D::Report(report_type, __code, ::EasyD3D::ErrorCodeType::False, __FILEW__, __LINE__, __FUNCTIONW__, L#x, msg); \
 } \
 while (false)
 
 #define _CUSTOM(x, report_type, msg) \
-    ::EasyD3D::Report(report_type, 0, ErrorCodeType::Custom, __FILEW__, __LINE__, __FUNCTIONW__, L"", msg);
+    ::EasyD3D::Report(report_type, 0, ::EasyD3D::ErrorCodeType::Custom, __FILEW__, __LINE__, __FUNCTIONW__, L"", msg);
 
 
 // Interface Macros
