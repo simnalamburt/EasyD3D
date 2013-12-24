@@ -24,6 +24,6 @@ See how easily EasyD3D let you make a new window!
         desc.WindowTitle(L"Hello, World!");
         desc.WindowSize(800, 600);
 
-        EasyD3D::Window window(desc);
+        EasyD3D::GdiWindow window(desc);
         window.Run(Show);
     }
