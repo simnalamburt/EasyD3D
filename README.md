@@ -7,6 +7,12 @@ You can easily include EasyD3D project into your solution by a single git comman
 
     git submodule add git://github.com/simnalamburt/EasyD3D.git EasyD3D
 
+Add the following line as the path of new additional include directories
+
+    $(SolutionDir)EasyD3D\Inc
+
+---
+
 See how easily EasyD3D let you make a new window!
 
     #include <Windows.h>
