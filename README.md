@@ -27,3 +27,11 @@ See how easily EasyD3D let you make a new window!
         EasyD3D::GdiWindow window(desc);
         window.Run(Show);
     }
+
+---
+
+###### Note
+The official remote repositories of this project is only the sites below:
+
+1. [hyeon.me](http://git.hyeon.me/simnalamburt/snucse-13-frontpage)
+1. [GitHub](https://github.com/simnalamburt/_13FrontPage)
