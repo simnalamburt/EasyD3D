@@ -33,5 +33,5 @@ See how easily EasyD3D let you make a new window!
 ###### Note
 The official remote repositories of this project is only the sites below:
 
-1. [hyeon.me](http://git.hyeon.me/simnalamburt/snucse-13-frontpage)
-1. [GitHub](https://github.com/simnalamburt/_13FrontPage)
+1. [hyeon.me](http://git.hyeon.me/simnalamburt/easyd3d)
+1. [GitHub](https://github.com/simnalamburt/EasyD3D)
