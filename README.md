@@ -1,7 +1,7 @@
 EasyD3D
 =======
 
-Make Direct3D11 application fast and easily with **EasyD3D**!
+Make Direct3D11 application fast and easy with **EasyD3D**!
 
 You can easily include EasyD3D project into your solution by a single git command.
 
