@@ -1,37 +1,49 @@
 EasyD3D
-=======
+========
 
-Make Direct3D11 application fast and easy with **EasyD3D**!
+Make Windows application fast and easy with *EasyD3D*
 
-You can easily include EasyD3D project into your solution by a single git command.
+```cpp
+#include <Windows.h>
+#include <EasyD3D/EasyD3D.h>
 
-    git submodule add git://github.com/simnalamburt/EasyD3D.git EasyD3D
+int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int Show)
+{
+    EasyD3D::WindowDesc desc;
+    desc.WindowTitle(L"Hello, World!");
+    desc.WindowSize(800, 600);
 
-Add the following line as the path of new additional include directories
+    EasyD3D::GdiWindow window(desc);
+    window.Run(Show);
+}
+```
 
-    $(SolutionDir)EasyD3D\Inc
+You can easily include *EasyD3D* into your Visual Studio solution with a single git command
 
----
+```bash
+git submodule add git://github.com/simnalamburt/EasyD3D.git EasyD3D
+```
 
-See how easily EasyD3D let you make a new window!
+Add the following line to the `Additional Include Directories` in `C/C++` config
 
-    #include <Windows.h>
-    #include <EasyD3D/EasyD3D.h>
-    
-    int APIENTRY WinMain(HINSTANCE, HINSTANCE, LPSTR, int Show)
-    {
-        EasyD3D::WindowDesc desc;
-        desc.WindowTitle(L"Hello, World!");
-        desc.WindowSize(800, 600);
+```
+$(SolutionDir)EasyD3D\Inc
+```
 
-        EasyD3D::GdiWindow window(desc);
-        window.Run(Show);
-    }
+--------
 
----
+*EasyD3D* is ...
 
-###### Note
-The official remote repositories of this project is only the sites below:
+* Modern C++
+* Fully aware of C++11, C++14
+* WinAPI wrapper
+* OpenGL/Direct3D wrapper
+* Windows Vista/7/8/8.1 compatible
+* Visual Studio friendly
 
-1. [hyeon.me](http://git.hyeon.me/simnalamburt/easyd3d)
-1. [GitHub](https://github.com/simnalamburt/EasyD3D)
+*EasyD3D* is not ...
+
+* C
+* [MFC](http://msdn.microsoft.com/en-us/library/d06h2x6e.aspx)
+* [glut](/dcnieho/FreeGLUT), [glfw](/glfw/glfw)
+* [SDL](https://www.libsdl.org)
