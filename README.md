@@ -45,5 +45,5 @@ $(SolutionDir)EasyD3D\Inc
 
 * C
 * [MFC](http://msdn.microsoft.com/en-us/library/d06h2x6e.aspx)
-* [glut](/dcnieho/FreeGLUT), [glfw](/glfw/glfw)
+* [glut](http://freeglut.sourceforge.net), [glfw](http://glfw.org)
 * [SDL](https://www.libsdl.org)
